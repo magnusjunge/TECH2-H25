@@ -19,5 +19,24 @@ Tasks
     against NumPy's argmax().
 """
 
+import numpy as np
+
 def argmax(lst):
-    
+
+    N = len(lst)
+
+    value = np.inf
+    imax = 0
+
+    for i in range(N):
+        value = lst[i]
+        if value > value_max:
+            imax = i  
+            value_max = value
+
+    return imax      
+
+values = [2, 3, -1, 7, 4]   
+i = argmax(values)
+print(f'Index of max value is {i}')
+
