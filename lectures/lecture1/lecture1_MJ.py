@@ -25,7 +25,7 @@ def argmax(lst):
 
     N = len(lst)
 
-    value = np.inf
+    value_max = - np.inf
     imax = 0
 
     for i in range(N):
