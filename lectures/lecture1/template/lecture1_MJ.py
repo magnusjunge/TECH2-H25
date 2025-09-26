@@ -39,10 +39,12 @@ def argmax(lst):
 
     return imax      
 
-#values = []
-values = [2, 3, -1, 7, 4]   
-i = argmax(values)
-vmax = values[i]
+if __name__ == '__main__':
+    
+    values = [2, 3, -1, 7, 4]   
+    i = argmax(values)
+    vmax = values[i]
+    values = []        
 
-print(f'Index of max value is {i}, which is {vmax}'), 
+    print(f'Index of max value is {i}, which is {vmax}'), 
 
